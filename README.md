@@ -67,7 +67,7 @@ Premium_Toast_Flutter.alertToast(
 <img alt="Success Toast" height="300" src="lib/Image%20Assets/Success%20Toast.jpg" title="Error Toast" width="150"/>
 
 ## Customization (Coming Soon) ⚙️
-Premium_Toast_Flutter aims to be fully customizable soon!
+**Premium Toast Flutter** aims to be fully customizable soon!
 Planned enhancements include:
 
 - 🎨 Custom colors and gradients
