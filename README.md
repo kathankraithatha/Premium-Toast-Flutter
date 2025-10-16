@@ -1,7 +1,7 @@
-# 🧈 Premium_Toast_Flutter
+# 🧈 Premium Toast Flutter
 
 A beautiful and lightweight Flutter package to display animated toast messages for success, error, and alert events.  
-Premium_Toast_Flutter makes your app interactions smoother by providing quick, elegant, and consistent feedback to users.
+**Premium Toast Flutter** makes your app interactions smoother by providing quick, elegant, and consistent feedback to users.
 
 ---
 
@@ -33,7 +33,7 @@ import 'package:premium_toast_flutter/premium_toast_flutter.dart';
 ```dart
 Premium_Toast_Flutter.successToast(
   context,
-  title: "Success!",
+  title: "Well Done!",
   subTitle: "Your message has been sent successfully.",
   duration: Duration(seconds: 3),
 );
@@ -42,8 +42,8 @@ Premium_Toast_Flutter.successToast(
 ```dart
 Premium_Toast_Flutter.errorToast(
   context,
-  title: "Error!",
-  subTitle: "Authentication failed. Please try again.",
+  title: "Oops!",
+  subTitle: "Some Error has occurred.",
   duration: Duration(seconds: 3),
 );
 ```
@@ -52,7 +52,7 @@ Premium_Toast_Flutter.errorToast(
 Premium_Toast_Flutter.alertToast(
   context,
   title: "Alert!",
-  subTitle: "Use special characters while setting up the password.",
+  subTitle: "There is some alert.",
   duration: Duration(seconds: 3),
 );
 ```
@@ -76,4 +76,4 @@ If you face any issues or have suggestions for improvements, feel free to open a
 
 📩 For queries or collaborations, reach out via [GitHub](https://github.com/kathankraithatha/Premium-Toast-Flutter) or connect on [LinkedIn](https://www.linkedin.com/in/kathank/).
 
-⭐️ If you like Premium_Toast_Flutter, don’t forget to give it a star on GitHub and share it with your developer friends!
+⭐️ If you like **Premium Toast Flutter**, don’t forget to give it a star on GitHub and share it with your developer friends!
