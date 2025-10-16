@@ -57,9 +57,9 @@ Premium_Toast_Flutter.alertToast(
 );
 ```
 ## Reference Images
-![Alert Toast](lib/Image%20Assets/Alert%20Toast.jpg)
-![Error Toast](lib/Image%20Assets/Error%20Toast.jpg) 
-![Success Toast](lib/Image%20Assets/Success%20Toast.jpg) 
+<img alt="Alert Toast" height="300" src="lib/Image%20Assets/Alert%20Toast.jpg" title="Alert Toast" width="300"/>
+<img alt="Error Toast" height="300" src="lib/Image%20Assets/Error%20Toast.jpg" title="Error Toast" width="300"/>
+<img alt="Success Toast" height="300" src="lib/Image%20Assets/Success%20Toast.jpg" title="Error Toast" width="300"/>
 ## Customization (Coming Soon) ⚙️
 Premium_Toast_Flutter aims to be fully customizable soon!
 Planned enhancements include:
