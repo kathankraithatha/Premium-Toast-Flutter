@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 
 class PremiumToastFlutter {
   static void successToast(
-      BuildContext context, {
-        required String? title,
-        required String? subtitle,
-        required Duration toastDuration,
-      }) {
+    BuildContext context, {
+    required String? title,
+    required String? subtitle,
+    required Duration toastDuration,
+        required bool? upperToast,
+        required bool? bottomToast
+  }) {
     final overlay = Overlay.of(context);
     late OverlayEntry entry;
 
@@ -15,20 +17,27 @@ class PremiumToastFlutter {
       duration: const Duration(milliseconds: 300),
     );
 
+    if ((upperToast == true && bottomToast == true) ||
+        (upperToast == false && bottomToast == false)) {
+      debugPrint("Invalid Toast Position: Either 'upperToast' or 'bottomToast' must be true, not both or none.");
+      upperToast = true;
+      bottomToast = false;
+    }
     //Animation
     final slideAnimation =
-    Tween<Offset>(begin: const Offset(0, -1), end: Offset.zero).animate(
-      CurvedAnimation(
-        parent: animationController,
-        curve: Curves.fastEaseInToSlowEaseOut,
-      ),
-    );
+        Tween<Offset>(begin: upperToast!? Offset(0, -1): Offset(0, 1), end: Offset.zero).animate(
+          CurvedAnimation(
+            parent: animationController,
+            curve: Curves.fastEaseInToSlowEaseOut,
+          ),
+        );
 
     entry = OverlayEntry(
       builder: (context) => Positioned(
-        top: 60,
+        top: bottomToast!?null:60,
         left: 20,
         right: 20,
+        bottom: upperToast!?null:60,
         child: SlideTransition(
           position: slideAnimation,
           child: Material(
@@ -108,11 +117,13 @@ class PremiumToastFlutter {
 
   //Error Toast
   static void errorToast(
-      BuildContext context, {
-        required String? title,
-        required String? subtitle,
-        required Duration toastDuration,
-      }) {
+    BuildContext context, {
+    required String? title,
+    required String? subtitle,
+    required Duration toastDuration,
+        required bool? upperToast,
+        required bool? bottomToast
+  }) {
     final overlay = Overlay.of(context);
     late OverlayEntry entry;
     final animationController = AnimationController(
@@ -120,20 +131,29 @@ class PremiumToastFlutter {
       duration: const Duration(milliseconds: 300),
     );
 
+
+    if ((upperToast == true && bottomToast == true) ||
+        (upperToast == false && bottomToast == false)) {
+      debugPrint("Invalid Toast Position: Either 'upperToast' or 'bottomToast' must be true, not both or none.");
+      upperToast = true;
+      bottomToast = false;
+    }
     // Animation
     final slideAnimation =
-    Tween<Offset>(begin: const Offset(0, -1), end: Offset.zero).animate(
-      CurvedAnimation(
-        parent: animationController,
-        curve: Curves.fastEaseInToSlowEaseOut,
-      ),
-    );
+        Tween<Offset>(begin: upperToast!? Offset(0, -1):Offset(0, 1), end: Offset.zero).animate(
+          CurvedAnimation(
+            parent: animationController,
+            curve: Curves.fastEaseInToSlowEaseOut,
+          ),
+        );
+
 
     entry = OverlayEntry(
       builder: (context) => Positioned(
-        top: 60,
+        top: bottomToast!?null: 60,
         left: 20,
         right: 20,
+        bottom: upperToast!?null:60,
         child: SlideTransition(
           position: slideAnimation,
           child: Material(
@@ -214,11 +234,13 @@ class PremiumToastFlutter {
   // ---------------------------------------------------------------------------
 
   static void alertToast(
-      BuildContext context, {
-        required String? title,
-        required String? subtitle,
-        required Duration toastDuration,
-      }) {
+    BuildContext context, {
+    required String? title,
+    required String? subtitle,
+    required Duration toastDuration,
+    required bool? upperToast,
+    required bool? bottomToast,
+  }) {
     final overlay = Overlay.of(context);
     late OverlayEntry entry;
 
@@ -227,20 +249,30 @@ class PremiumToastFlutter {
       duration: const Duration(milliseconds: 300),
     );
 
+    if ((upperToast == true && bottomToast == true) ||
+        (upperToast == false && bottomToast == false)) {
+      debugPrint("Invalid Toast Position: Either 'upperToast' or 'bottomToast' must be true, not both or none.");
+      upperToast = true;
+      bottomToast = false;
+    }
     //Animation
     final slideAnimation =
-    Tween<Offset>(begin: const Offset(0, -1), end: Offset.zero).animate(
-      CurvedAnimation(
-        parent: animationController,
-        curve: Curves.fastEaseInToSlowEaseOut,
-      ),
-    );
+        Tween<Offset>(
+          begin: upperToast! ? Offset(0, -1) : Offset(0, 1),
+          end: Offset.zero,
+        ).animate(
+          CurvedAnimation(
+            parent: animationController,
+            curve: Curves.fastEaseInToSlowEaseOut,
+          ),
+        );
 
     entry = OverlayEntry(
       builder: (context) => Positioned(
-        top: 60,
+        top: bottomToast! ? null : 60,
         left: 20,
         right: 20,
+        bottom: upperToast! ? null : 60,
         child: SlideTransition(
           position: slideAnimation,
           child: Material(

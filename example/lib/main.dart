@@ -33,6 +33,8 @@ class PremiumToastFlutterDemo extends StatelessWidget {
               onPressed: () {
                 PremiumToastFlutter.successToast(
                   context,
+                  upperToast: false,
+                  bottomToast: true,
                   title: "Well Done!",
                   subtitle: "Your message has been sent successfully",
                   toastDuration: const Duration(seconds: 3),
@@ -44,6 +46,8 @@ class PremiumToastFlutterDemo extends StatelessWidget {
               onPressed: () {
                 PremiumToastFlutter.errorToast(
                   context,
+                  upperToast: false,
+                  bottomToast: true,
                   title: "Oops!",
                   subtitle: "Some Error has occurred",
                   toastDuration: const Duration(seconds: 3),
@@ -55,6 +59,8 @@ class PremiumToastFlutterDemo extends StatelessWidget {
               onPressed: () {
                 PremiumToastFlutter.alertToast(
                   context,
+                  upperToast: false,
+                  bottomToast: true,
                   title: "Alert!",
                   subtitle: "There is some alert!",
                   toastDuration: const Duration(seconds: 3),
