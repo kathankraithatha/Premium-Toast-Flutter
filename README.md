@@ -60,6 +60,9 @@ Premium_Toast_Flutter.alertToast(
 ### Upper Toast (Alert Toast, Error Toast & Success Toast) 
 <img alt="Alert Toast" height="300" src="https://raw.githubusercontent.com/kathankraithatha/Premium-Toast-Flutter/main/lib/Image%20Assets/Alert%20Toast.jpg" title="Alert Toast" width="150"/> <img alt="Error Toast" height="300" src="https://raw.githubusercontent.com/kathankraithatha/Premium-Toast-Flutter/main/lib/Image%20Assets/Error%20Toast.jpg" title="Error Toast" width="150"/> <img alt="Success Toast" height="300" src="https://raw.githubusercontent.com/kathankraithatha/Premium-Toast-Flutter/main/lib/Image%20Assets/Success%20Toast.jpg" title="Success Toast" width="150"/>
 
+### Bottom Toast (Alert Toast, Error Toast & Success Toast)
+<img alt="Alert Toast" height="300" src="https://raw.githubusercontent.com/kathankraithatha/Premium-Toast-Flutter/main/lib/Image%20Assets/bottom_alert_toast.jpeg" title="Bottom Alert Toast" width="150"/> <img alt="Alert Toast" height="300" src="https://raw.githubusercontent.com/kathankraithatha/Premium-Toast-Flutter/main/lib/Image%20Assets/bottom_error_toast.jpeg" title="Bottom Error Toast" width="150"/> <img alt="Alert Toast" height="300" src="https://raw.githubusercontent.com/kathankraithatha/Premium-Toast-Flutter/main/lib/Image%20Assets/bottom_success_toast.jpeg" title="Bottom Success Toast" width="150"/>
+
 ## Customization (Coming Soon) ⚙️
 **Premium Toast Flutter** aims to be fully customizable soon!
 Planned enhancements include:
