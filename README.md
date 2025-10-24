@@ -33,6 +33,8 @@ import 'package:premium_toast_flutter/premium_toast_flutter.dart';
 ```dart
 Premium_Toast_Flutter.successToast(
   context,
+  upperTost: false,
+  bottomToast: true,
   title: "Well Done!",
   subTitle: "Your message has been sent successfully.",
   duration: Duration(seconds: 3),
@@ -42,6 +44,8 @@ Premium_Toast_Flutter.successToast(
 ```dart
 Premium_Toast_Flutter.errorToast(
   context,
+  upperTost: false,
+  bottomToast: true,
   title: "Oops!",
   subTitle: "Some Error has occurred.",
   duration: Duration(seconds: 3),
@@ -51,6 +55,8 @@ Premium_Toast_Flutter.errorToast(
 ```dart
 Premium_Toast_Flutter.alertToast(
   context,
+  upperTost: false,
+  bottomToast: true,
   title: "Alert!",
   subTitle: "There is some alert.",
   duration: Duration(seconds: 3),
